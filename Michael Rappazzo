@@ -1,1 +1,37 @@
 
+
+taken user names
+allowed charecters 0-9 a-z
+allowed charecters !@#$%^&*
+
+message 1 invalid name
+message 2 name taken
+message 3 invalid pass
+message4 incorrect username or password
+message5sign up successful
+message 6 login successful
+
+while true
+initial sign i[ = input select user names
+password signup = input pass
+
+uppercase test = userid[0].isupper
+if upper
+print message [0]
+contintaken username admin admin user user root
+userid taken test = userid signup in taken username
+if userid taken print message 1
+conitnue
+
+password length = len(password >= 8
+ if not pass word length
+ print message 2
+ continue
+ 
+ userid = user id register
+ pass = user pass register
+
+ user id = input
+ pass = input
+
+               ]
