@@ -1,4 +1,4 @@
-from statistics import mode
+# Online Python cofrom statistics import mode
 
 ''' Fun facts about dictionaries 
 
@@ -9,61 +9,102 @@ from statistics import mode
 '''
 
 # How do we create a dictionary?
-user_data = {"user_id":"400"}
-
-print(type(user_data))
-# Bracket notation
+# user_data = {"user_id":"400",
+#             "name":"Fritz"}
 
 
-# Add new key value
+# print(type(user_data))
+# # Bracket notation
+# print(user_data["name"])
+# print(user_data["user_id"])
 
+# # Add new key value
+# user_data["address"] = 'elm street'
 
-# lets look at all the methods available to us
+# # lets look at all the methods available to us
+# print(dir(user_data))
 
+# # lets try one
+# print(user_data.__contains__("user_id"))
 
-# lets try one
-
-
-# Dict constructor
-
+# # Dict constructor
+# new_dictionary = dict()
+# print(new_dictionary)
 
 # Dictionary methods
 # Lets use the keys methods to get the keys from this dictionary
-
-
+# dog = {"Breed": "Japanese chin",
+#         "gender": "female",
+#         "Age" : 7}
+# print(dog)
 
 # Lets use the values methods to get the values from this dictionary
-
-
+# print(f'The keys for our dog dictionary : {dog.keys()}')
+# dog_information = dog.keys()
+# print(dog_information)
 # with an f string
 
 
 # Lets use clear method to remove all elements
+# dog = {"Breed": "Japanese chin",
+#         "gender": "female",
+#         "Age" : 7}
 
+# dog.clear()
+# print(dog)
 
 # Lets use get method to get a key value
+# dog = {"Breed": "Japanese chin",
+#         "gender": "female",
+#         "age": 7}
 
-
+# print(dog.get("age"))
+# print(dog.get("temperment"))
 # lets look at one of the parameters to show an error if the key doesnt exist
 
 
 # Lets create a copy
-
+# dog = {"breed": "Japanese chin",
+#         "gender": "female",
+#         "age": 7}
+        
+# new_dog = dog.copy()
+# print(new_dog)
+        
 
 # Lets remove a specified key with pop
-
-
-# Lets remove a last inserted key-value pair with popitem
-
+# dog = {"breed": "Japanese chin",
+#         "gender": "female",
+#         "age": 7}
+# dog.pop("breed")
+# print(dog)
+# # Lets remove a last inserted key-value pair with popitem
+# dog = {"breed": "Japanese chin",
+#         "gender": "female",
+#         "age": 7}
+# dog.popitem()
+# print(dog)
 
 # Get a list with each key-value pair with items
-
+# dog = {"breed": "Japanese chin",
+#         "gender": "female",
+#         "age": 7}
+# key_value_pairs_in_a_dictionary = dog.items()
+# print(key_value_pairs_in_a_dictionary)
 
 # we can loop through
-
-
-# Update dictionary
-
+# dog = {"breed": "Japanese chin",
+#         "gender": "female",
+#         "age": 7}
+# for key, value in dog.items():
+#     print(key,value)
+# # Update dictionary
+# dog = {"breed": "Japanese chin",
+#         "gender": "female",
+#         "age": 7}
+# dog.update({"temperment":"happy"})
+# dog.update({"breed":"Chihuahua"})
+# print(dog)
 
 # Update can also update current key value pairs, as well as adding
 
@@ -89,22 +130,35 @@ Out:
 {'one': 4, 'two': 10, 'three': 30}
 
 '''
+# list1 = ['one', 'two', 'three']
+# list2 = [4, 10, 30]
+# # Using zip and dict methods
+# # drive = ('sam', 'majestic', 'rey')
+# # car = ('chevy', 'ford', 'dodge')
+# # combine = zip(drive, car)
+# # print(tuple(combine))
+# # Zip creates a zip object
+# my_keys = ['one', 'two', 'three']
+# my_values = [4, 10, 30]
+# my_dict = dict((zip(my_keys, my_values)))
+# print(my_dict)
 
-# Using zip and dict methods
-# Zip creates a zip object
-
-
-# Dict creates a dictionary
-
+# # Dict creates a dictionary
+# my_keys = ['one', 'two', 'three']
+# my_values = [4, 10, 30]
+# my_dict = dict((zip(my_keys, my_values)))
+# print(my_dict)
 # my_keys = ['one', 'two', 'three']
 # my_values = [4, 10, 30]
 
 
 # Using dictionary comprehension
 
-# my_keys = ['one', 'two', 'three']
-# my_values = [1,2,3]
+my_keys = ['one', 'two', 'three']
+my_values = [1,2,3]
 
+my_dictionary = {keys: values for (keys, values) in zip(my_keys, my_values)}
+# print(my_dictionary)
 
 
 '''
@@ -160,3 +214,5 @@ Output: {'manager': 50000, 'developer': 62500}
 
 
 
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
